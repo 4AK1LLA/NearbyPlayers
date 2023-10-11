@@ -1,0 +1,4 @@
+name: NearbyPlayers
+main: com.rustret.nearbyplayers.NearbyPlayers
+version: "1.0.0"
+api: ["1.0.0"]

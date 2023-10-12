@@ -1,0 +1,5 @@
+# NearbyPlayers plugin config
+
+near-no: 'No players found within %d blocks'
+near-found: 'Players found within a radius of %d blocks: '
+near-player: '%s(%dm)' # nickname(50m)

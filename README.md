@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Nukkit plugin offers dynamic radius customization using the `near.radius.*` permission, where `*` represents the number of blocks for detection.
+This Nukkit plugin allows players to easily check who is nearby in the game world. You can customize radius using the `near.radius.*` permission, where `*` represents the number of blocks for detection.
 
 ![Screenshot](https://github.com/4AK1LLA/NearbyPlayers/assets/90700933/1a63c63a-db7a-4e52-8dcf-74ba7b5f448d)
 

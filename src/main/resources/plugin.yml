@@ -2,3 +2,18 @@ name: NearbyPlayers
 main: com.rustret.nearbyplayers.NearbyPlayers
 version: "1.0.0"
 api: ["1.0.0"]
+
+author: rustret
+description: Plugin that allows to see distance to nearby players
+website: https://github.com/4AK1LLA/NearbyPlayers
+
+commands:
+  near:
+    usage: "/near"
+    description: "Get distance to nearby players"
+    permission: near.command
+permissions:
+  near.command:
+    description: "Access to command /near"
+  near.radius.*:
+    description: "How large the radius of player detection is"

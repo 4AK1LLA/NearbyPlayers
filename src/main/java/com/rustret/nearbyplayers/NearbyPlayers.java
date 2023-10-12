@@ -66,18 +66,18 @@ public class NearbyPlayers extends PluginBase {
             nearPlayers.put(player.getName(), distance);
         }
 
-        sender.sendMessage(buildMessage(nearPlayers));
+        sender.sendMessage(buildMessage(nearPlayers, radius));
     }
 
-    private String buildMessage(Map<String, Integer> players) {
+    private String buildMessage(Map<String, Integer> players, int radius) {
         if (players.size() == 0) {
-            return TEXT_NEAR_NO;
+            return String.format(TEXT_NEAR_NO, radius);
         }
 
         List<Entry<String, Integer>> entryList = new ArrayList<>(players.entrySet());
         entryList.sort(Entry.comparingByValue());
 
-        String start = TEXT_NEAR_FOUND;
+        String start = String.format(TEXT_NEAR_FOUND, radius);
         StringBuilder message = new StringBuilder(start);
         for (Entry<String, Integer> entry : entryList) {
             if (message.length() > start.length()) {
